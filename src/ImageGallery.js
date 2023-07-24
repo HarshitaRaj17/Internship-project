@@ -14,7 +14,7 @@ const White = styled.div`
   background-color: #fff;
 `;
 
-function ImageGallery({ images, searchTerm,onImageClick }) {
+function ImageGallery({ images, searchTerm, onImageClick}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -29,7 +29,7 @@ function ImageGallery({ images, searchTerm,onImageClick }) {
     <div>
       <White>
       {images.slice(currentIndex, currentIndex + 40).map((image, index) => (
-       <Img key={index} src={image.largeImageURL} alt={image.tags} onClick={()=>onImageClick(image)}/>
+       <Img key={index} src={image.largeImageURL} alt={image.tags} onClick={() => onImageClick(image)}/>
      ))}
       </White>
 

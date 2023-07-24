@@ -75,7 +75,7 @@ function Home() {
 
       <Search/>
       <Trending>Trending:flowers, love, forest, river</Trending>
-      
+
       </HomeSec>
 
   );
